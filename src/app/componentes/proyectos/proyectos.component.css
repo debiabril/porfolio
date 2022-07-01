@@ -1,0 +1,10 @@
+*{
+    font-family: 'Life Savers', cursive;
+    font-weight: bold;
+}
+.col-proyectos-ancho{
+    width: 20rem
+}
+.texto-proyectos{
+    text-align: justify;
+}

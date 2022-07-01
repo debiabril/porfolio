@@ -1,0 +1,24 @@
+<div class="container-fluid mt-5">
+    <p class="lead mx-3">EXPERIENCIA</p>
+  <ul>
+    <li *ngFor="let experiencia of experienciaList">
+    <div class="container-fluid mb-1 ">
+      <div class="float-end mt-0 pt-0">
+        <div class="btn btn-outline-success display-none" onclick="editar_acercade()">
+          <a href="#" class="btn-right">
+            ✍
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-sm-1 align-self-center"><img [src]="experiencia.img" class="justify-content-start" alt="Logo_cuidadoPers" width="90px" height="90px"></div>
+        <div class="col col-lg-6">
+          <h5>{{experiencia.puesto}}</h5>
+          <p>{{experiencia.lugarYfecha}}</p>
+          <p>{{experiencia.descripcion}}</p>
+        </div>
+        </div>
+    </div>
+    </li>
+  </ul>
+</div>

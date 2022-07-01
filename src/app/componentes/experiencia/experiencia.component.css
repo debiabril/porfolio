@@ -1,6 +1,10 @@
+ul{
+    list-style: none;
+}
 *{
-    overflow-y: scroll;
-    background-color: var(--fondo-color);
     font-family: 'Life Savers', cursive;
     font-weight: bold;
+}
+.display-none{
+    display: none;
 }

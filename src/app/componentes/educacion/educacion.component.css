@@ -1,0 +1,13 @@
+ul{
+    list-style: none;
+}
+*{
+    font-family: 'Life Savers', cursive;
+
+}
+p{
+    font-weight: bold;
+}
+.display-none{
+    display: none;
+}
