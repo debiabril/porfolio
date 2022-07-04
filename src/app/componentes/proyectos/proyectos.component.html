@@ -1,11 +1,12 @@
 <div class="container-fluid mt-5 ">
     <p class="lead mx-5">PROYECTOS</p>
-    <div class="container-fluid">
+    <div class="container-fluid" *ngFor="let proyecto of proyectoList">
     <div class="row d-flex mx-1 mb-3">
       <div class="col-auto mx-3 col-proyectos-ancho">
-      <a href="#" target="_blank"><img class="rounded" src="imagenesArgProg/logoPortfolio.jpg" alt="ImagenProyecto1" width="300px" height="190px"></a>
-        <h5 class="titulos-h5">Porfolio Web Editable</h5>
-        <p class="texto-proyectos">31/07/2022<br>Proyecto desarrollado para el curso de Argentina Programa, con conexión a Base de datos y Login que permite la edición de todos los datos desde la interfaz de usuario</p>  
+      <a href="#" target="_blank"><img class="rounded" src="../../../assets/imagenes/logoPortfolio.jpg" alt="Imagen Proyecto" width="300px" height="190px"></a>
+        <h5 >{{proyecto.titulo}}</h5>
+        <p> {{proyecto.fecha}} </p> 
+        <p> {{proyecto.descripcion}}</p>  
      </div>
     </div>
     </div> 

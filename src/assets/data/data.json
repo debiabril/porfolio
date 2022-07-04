@@ -1,50 +1,66 @@
 {
     "nombre":"Débora Abril Badosa",
     "profesion":"Fullstack Developer",
-    "edad":28,
+    "acercade":[{
+        "p1":"Desarrolladora Fullstack en proceso.. 🔜",
+        "p2":"Ex-estudiante de Fonoaudiología 👂👅💬 que fue atrapada por la Programación 💻",
+        "p3":"Amante de mi gato Leo 😻, los colores 🌈 y la música 🎵🎶",
+        "p4": "Cinéfila, seriéfila 🎥🎞 y gammer 🎮"
+    }],
+    "datos":[{
+        "p1":"🌎📌 Rosario, Santa Fe, Argentina",
+        "p2":"📱 341-2785360",
+        "p3":"📧 debora.badosa@gmail.com"
+        }],
     "lenguajes":["Java","Javascript","SQL"],
 
     "educacion":[{
         "titulo": "Educación IT",
         "descripcion":"Cursos certificado de Java, JavaScript, Git, HTML5, Bases de datos y SQL, Java Spring, Java Standard J2SE, Java Hibernate, ReactJS",
-        "img":"https://flamingtext.es/Word-Logos/ejemplo/"
+        "img":"https://old.educacionit.com/images/logo-it.jpg"
     }, {
         "titulo": "Fundación Telefónica Movistar",
         "descripcion":"Cursos certificado en Diseño Web con HTML5 y CSS y Programación con JavaScript",
-        "img":"https://drive.google.com/file/d/1cjwuHtQyZ71o8YaL5C5GTJKpXb14aNxQ/view?usp=sharing"
+        "img":"https://tercersector.org.ar/wp-content/uploads/2022/02/unnamed-1.jpg"
     },{
         "titulo": "Argentina Programa",
         "descripcion":"Cursos Patrocinado por el Ministerio de Desarrollo Productivo Argentina y cessi Argentina (Cámara de Industria Argentina del Software). Primera etapa #SéProgramar finalizada con éxito, segunda etapa #YoProgramo en proceso. Finalidad: Desarrolladora Fullstack Java",
-        "img":"https://drive.google.com/file/d/1RSta-6JYBxojZVmKMxC0z2ZmHpocxyYo/view?usp=sharing"
+        "img":"https://cdn-sp.radionacional.com.ar/wp-content/uploads/2021/12/Diseno-sin-titulo-1-1.png"
     },{
         "titulo": "Accenture",
         "descripcion":"Curso de habilidades blandas en Flexibilidad, Trabajo en equipo y Comunicación: Expresión y Comprensión escrita",
-        "img":"https://drive.google.com/file/d/1S2zGg8o4QdgCMPO9bV4Ulpibkg1rynt0/view?usp=sharing"
+        "img":"https://media-exp2.licdn.com/dms/image/C4E0BAQFArWuBFtTu7g/company-logo_200_200/0/1652996339001?e=2147483647&v=beta&t=ZlXMWGHM1czzADYdM-BI8_B-DplhwXIsgnNPIYTjd4o"
     },{
         "titulo": "Telecom",
         "descripcion":"Programa Digit@lers. Certificación Desarrolladora Full Stack con Java en conjunto con Educación IT",
-        "img":"https://drive.google.com/file/d/1cjwuHtQyZ71o8YaL5C5GTJKpXb14aNxQ/view?usp=sharing"
+        "img":"https://brandemia.org/contenido/subidas/2021/10/05-telecom-argentina.jpg"
     },{
         "titulo": "Universidad Nacional de Rosario",
         "descripcion":"Licenciatura en Fonoaudiología",
-        "img":"https://drive.google.com/file/d/1kNCmF7T4Pfhog_VA49x4pMtZM9XyAFUm/view?usp=sharing"
+        "img":"https://unr.edu.ar/wp-content/uploads/2021/10/logo-unr.jpg"
     }],
 
     "experiencia":[{
         "puesto": "Cuidado de Personas Mayores",
         "lugarYfecha":"Domicilio particular. Desde: 03/2017 hasta: 05/2019",
         "descripcion":"Acompañamiento de personas mayores, realización de tareas del hogar, encargada del transporte de la persona fuera del domicilio, resolución de situaciones conflictivas derivadas del cuidado, etc.",
-        "img":"https://flamingtext.es/Word-Logos/ejemplo/"
+        "img":"https://i.pinimg.com/474x/79/f2/a8/79f2a8c094d953feb92b13f92657c595.jpg"
     },{
         "puesto": "Cajera",
         "lugarYfecha":"La Gallega. Desde: 05/2013 hasta: 08/2013",
         "descripcion":"Atención al publico, manejo de dinero, tarjetas de crédito, cierre de caja, etc.",
-        "img":"https://drive.google.com/file/d/1VQxdygvxcEX_Mbo4lzGL_Rvlk3FN2YYh/view?usp=sharing"
+        "img":"https://media.glassdoor.com/sqll/2488324/la-gallega-supermercados-squarelogo-1554167188763.png"
     },{
         "puesto": "Secretaria",
         "lugarYfecha":"Consultorio Médico Dra. Liliana Nessier. Desde: 02/2012 hasta: 02/2013",
         "descripcion":"Atención telefónica, respuesta de consultas y dudas, asesoramiento e información general, entrega de informes, manejo de agenda, archivo de historias clínicas, etc.",
-        "img":"https://drive.google.com/file/d/1ZAC2G5l38SjbvvY1loMYlYVk99Cumcum/view?usp=sharing"
+        "img":"https://cdn.worldvectorlogo.com/logos/salud.svg"
+    }],
+    "proyecto":[{
+        "titulo": "Porfolio Web Editable",
+        "fecha":"31/07/2022",
+        "descripcion":"Proyecto desarrollado para el curso Argentina Programa, con conexión a Base de datos y Login que permite la edición de todos los datos de la interfaz de usuario",
+        "img":"https://old.educacionit.com/images/logo-it.jpg"
     }]
 
   }

@@ -7,11 +7,11 @@
             ✍
           </a>
         </div></div><p class="lead ">Acerca de mí</p>
-        <div class="p-1" >
-          <p id="text-acercade" class="mb-1 ">Desarrolladora Fullstack en proceso.. 🔜
-            <br>Ex-estudiante de Fonoaudiología 👂👅💬 que fue atrapada por la Programación 💻
-            <br>Amante de mi gato Leo 😻, los colores 🌈 y la música 🎵🎶
-            <br>Cinéfila, seriéfila 🎥🎞 y gammer 🎮
+        <div *ngFor="let acercade of acercadeList" class="p-1" >
+          <p class="mb-1 ">{{acercade.p1}}
+            <br>{{acercade.p2}}
+            <br>{{acercade.p3}}
+            <br>{{acercade.p4}}
           </p>
         </div> 
         <div>
@@ -20,7 +20,7 @@
         </div>
       </div>
       </div>
-    <div class=" col-lg-3 ">
+    <div class=" col-lg-5 ">
         <div class=" mx-2 mt-3">
           <div class="float-end mt-0 pt-0">
           <div class="btn btn-outline-success display-none" onclick="editar_parrafoDatos()">
@@ -29,10 +29,10 @@
             </a>
           </div></div>
         <p class="lead ">Datos de contacto</p>
-        <div class="p-0" >
-          <p id="text-datos" class="mb-1">🌎📌 Rosario, Santa Fe, Argentina
-            <br> 📱 341-2785360
-            <br> 📧 debora.badosa@gmail.com</p>
+        <div *ngFor="let datos of datosList" class="p-0" >
+          <p  class="mb-1">{{datos.p1}}
+            <br> {{datos.p2}}
+            <br> {{datos.p3}}</p>
             </div>
             <div>
               <input id="edit-datos" class="display-none" type="text" oninput="functionDatos(this.value)">
