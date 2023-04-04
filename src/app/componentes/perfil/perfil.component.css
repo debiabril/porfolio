@@ -1,6 +1,7 @@
 .img-banner{
-    background-image: url("../../../assets/imagenes/banner.jpeg"); 
-    height:250px;
+    background-image: url("../../../assets/imagenes/banner.jpeg");
+    background-position: cover; 
+    min-height:250px;
 }
 .div-img-fotoPerfil{
     width: 200px;
