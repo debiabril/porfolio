@@ -1,13 +1,12 @@
 .img-banner{
     background-image: url("../../../assets/imagenes/banner.jpeg");
-    background-position: cover; 
-    min-height:250px;
+    min-height:5rem;
 }
 .div-img-fotoPerfil{
-    width: 200px;
+    width: 15rem;
 }
 .img-fotoPerfil{
-    width: 200px; z-index: 1
+    width: 15rem; z-index: 1
 }
 .titulo-nombre{
     font-family: 'Marko One', serif;
