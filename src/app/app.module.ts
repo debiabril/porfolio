@@ -7,8 +7,7 @@ import { NavComponent } from './componentes/nav/nav.component';
 import { PerfilComponent } from './componentes/perfil/perfil.component';
 import { AcercadeComponent } from './componentes/acercade/acercade.component';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
-import { HardSkillsComponent } from './componentes/hard-skills/hard-skills.component';
-import { SoftSkillsComponent } from './componentes/soft-skills/soft-skills.component';
+import { SkillsComponent } from './componentes/skills/skills.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { FooterComponent } from './componentes/footer/footer.component';
@@ -25,8 +24,7 @@ import { interceptorProvider } from './service/interceptor-service';
     PerfilComponent,
     AcercadeComponent,
     EducacionComponent,
-    HardSkillsComponent,
-    SoftSkillsComponent,
+    SkillsComponent,
     ExperienciaComponent,
     ProyectosComponent,
     FooterComponent,
