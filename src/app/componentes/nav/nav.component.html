@@ -24,6 +24,7 @@
               src="../../../assets/imagenes/mailIcon.png" alt="Mail"></a> </span>         
       </li>
       </ul> 
-      <a href="/login" class="btn btn-outline-success py-1 my-3 mx-5" (click)="login()" >Iniciar Sesión</a>
+      <button type="button" class="btn btn-outline-success py-1 my-3 mx-5" (click)="login()" *ngIf="!isLogged">Iniciar Sesión</button>
+      <button type="button" class="btn btn-outline-success py-1 my-3 mx-5" (click)="onLogOut()" *ngIf="isLogged">Cerrar Sesión</button>
     </div>
   </nav></div>
