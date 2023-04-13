@@ -1,24 +1,22 @@
 <div class="container-fluid mt-5">
-    <p class="lead mx-3">EXPERIENCIA</p>
-  <ul>
-    <li *ngFor="let experiencia of experienciaList">
-    <div class="container-fluid mb-1 ">
-      <div class="float-end mt-0 pt-0">
-        <div class="btn btn-outline-success display-none" onclick="editar()">
-          <a href="#" class="btn-right">
-            ✍
-          </a>
-        </div>
+  <div class="row mt-5">
+    <div class="d-flex justify-content-between">
+      <p class="lead mx-3">EXPERIENCIA</p>
+      <div class="ml-5">
+        <button type="button" class="btn btn-outline-success"  routerLink="/nuevaexp" *ngIf="isLogged">
+          Nueva experiencia 
+        </button>
       </div>
-      <div class="row">
-        <div class="col col-sm-2 align-self-center"><img [src]="experiencia.img" class="col-9"  alt="Logo_cuidadoPers"></div>
-        <div class="col col-lg-6">
-          <h5>{{experiencia.puesto}}</h5>
-          <p>{{experiencia.lugarYfecha}}</p>
-          <p>{{experiencia.descripcion}}</p>
-        </div>
-        </div>
     </div>
-    </li>
-  </ul>
+    <table class="mx-5">
+      <tbody>
+        <tr *ngFor="let Experiencia of experiencia">
+          <td><h5>{{Experiencia.nombreE}}</h5></td>
+          <td>{{Experiencia.descripcionE}}</td>
+          <td *ngIf="isLogged"><button class="btn btn-outline-success" routerLink="/editexp/{{Experiencia.id}}">✍</button></td>
+          <td *ngIf="isLogged"><button class="btn btn-outline-danger" (click)="delete(Experiencia.id)">❌</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>

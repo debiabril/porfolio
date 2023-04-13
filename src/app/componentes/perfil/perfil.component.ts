@@ -17,6 +17,7 @@ export class PerfilComponent implements OnInit {
   
     ngOnInit(): void {
       this.personaService.getPersona().subscribe(data => {this.persona = data})
+      console.log(this.persona);
     }
 
   /* miPorfolio:any;
