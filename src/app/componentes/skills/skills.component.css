@@ -44,25 +44,3 @@
 @keyframes animate-positive{
     0%{ width: 0; }
 }
-
-.progress-bar-red{
-    background-color: var(--red-color);
-}
-.progress-bar-green{
-    background-color: var(--green-color);
-}
-.progress-bar-violet{
-    background-color: var(--violet-color);
-}
-.progress-bar-orange{
-    background-color: var(--orange-color);
-}
-.progress-bar-lightblue{
-    background-color: var(--lightblue-color);
-}
-.progress-bar-yellow{
-    background-color: var(--yellow-color);
-}
-.progress-bar-black{
-    background-color: var(--black-color);
-}

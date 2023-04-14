@@ -7,7 +7,7 @@
     </div>
     <div class="d-flex flex-wrap">
     <div class="container mx-0" style="max-width:45%;"  *ngFor="let skill of skill">
-        <h6>{{skill.nombre}} - {{skill.porcentaje}}%</h6>
+        <h6>{{skill.nombre}}</h6>
         <div class="progress">
             <div class="progress-bar progress-bar-striped active" [ngStyle]="{'width' : skill.porcentaje + '%','background-color': skill.color}" [ngStyle]=""></div>
         </div>
