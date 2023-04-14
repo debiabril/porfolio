@@ -9,7 +9,7 @@
     <div class="container mx-0" style="max-width:45%;"  *ngFor="let skill of skill">
         <h6>{{skill.nombre}} - {{skill.porcentaje}}%</h6>
         <div class="progress">
-            <div class="progress-bar progress-bar-red progress-bar-striped active" style="width:88%;"></div>
+            <div class="progress-bar progress-bar-striped active" [ngStyle]="{'width' : skill.porcentaje + '%','background-color': skill.color}" [ngStyle]=""></div>
         </div>
         <button *ngIf="isLogged"class="btn btn-outline-success" routerLink="/editskill/{{skill.id}}">✍</button>
         <button *ngIf="isLogged"class="btn btn-outline-danger" (click)="delete(skill.id)">❌</button>

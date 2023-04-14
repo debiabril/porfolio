@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-/* import { persona } from 'src/app/model/persona.model';
-import { PersonaService } from 'src/app/service/persona.service'; */
-import { PorfolioService } from 'src/app/servicios/porfolio.service';
+import { persona } from 'src/app/model/persona.model';
+import { PersonaService } from 'src/app/service/persona.service';
+
 
 @Component({
   selector: 'app-acercade',
@@ -9,7 +9,7 @@ import { PorfolioService } from 'src/app/servicios/porfolio.service';
   styleUrls: ['./acercade.component.css']
 })
 export class AcercadeComponent implements OnInit {
-  /* persona : persona = new persona("","","");
+  persona : persona = new persona("","","");
 
   constructor(public personaService: PersonaService){
 
@@ -17,18 +17,6 @@ export class AcercadeComponent implements OnInit {
 
   ngOnInit(): void {
     this.personaService.getPersona().subscribe(data => {this.persona = data})
-  } */
-  acercadeList:any;
-  datosList:any;
-  constructor(private datosPofolio:PorfolioService) { }
-
-  ngOnInit(): void {
-    this.datosPofolio.obtenerDatos().subscribe(data =>{
-      this.acercadeList=data.acercade;
-    });
-    this.datosPofolio.obtenerDatos().subscribe(data =>{
-      this.datosList=data.datos;
-    });
   }
 
 }

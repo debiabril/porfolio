@@ -28,6 +28,7 @@ export class EditSkillComponent implements OnInit {
     this.skillS.update(id, this.skill).subscribe(
       data => {
         alert("Skill actualizada");
+        console.log(this.skill);
         this.router.navigate(['']);
       },err=>{
         alert("Error al actualizar la skill");

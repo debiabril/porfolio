@@ -2,41 +2,36 @@
     <div class="col-lg-5 ">
         <div class="mt-3">
           <div class="float-end mt-0 pt-0">
-        <div class="btn btn-outline-success display-none" onclick="editar_acercade()">
-          <a href="#"class="btn-right">
-            ✍
-          </a>
+        <div class="btn btn-outline-success display-none" >
         </div></div><p class="lead ">Acerca de mí</p>
-        <div *ngFor="let acercade of acercadeList" class="p-1" >
+        <!-- <div *ngFor="let acercade of acercadeList" class="p-1" >
           <p class="mb-1 ">{{acercade.p1}}
             <br>{{acercade.p2}}
             <br>{{acercade.p3}}
             <br>{{acercade.p4}}
           </p>
         </div> 
-        <div>
-          <input id="edit-acercade" class="display-none" type="text"  oninput="funcionAcercade(this.value)">
-          <input type="file" id="file1" class="display-none" onchange="showFile(this)">
+        <div> -->
+          <input id="edit-acercade" class="display-none" type="text">
+          <input type="file" id="file1" class="display-none">
         </div>
       </div>
       </div>
     <div class=" col-lg-5 ">
         <div class=" mx-2 mt-3">
           <div class="float-end mt-0 pt-0">
-          <div class="btn btn-outline-success display-none" onclick="editar_parrafoDatos()">
+          <div class="btn btn-outline-success display-none" >
             <a href="#"class="btn-right">
               ✍
             </a>
           </div></div>
         <p class="lead ">Datos de contacto</p>
-        <div *ngFor="let datos of datosList" class="p-0" >
+       <!--  <div *ngFor="let datos of datosList" class="p-0" >
           <p  class="mb-1">{{datos.p1}}
             <br> {{datos.p2}}
             <br> {{datos.p3}}</p>
             </div>
-            <div>
-              <input id="edit-datos" class="display-none" type="text" oninput="functionDatos(this.value)">
+            <div> -->
+              <input id="edit-datos" class="display-none" type="text">
             </div>
         </div>
-    </div>
-    </div>

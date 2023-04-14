@@ -24,6 +24,7 @@ export class SkillsComponent implements OnInit {
     this.skillS.lista().subscribe(
       data => {
         this.skill = data;
+        console.log(this.skill);        
       }
     )
   }
@@ -38,5 +39,4 @@ export class SkillsComponent implements OnInit {
       )
     }
   }
-  save(skill: Skill){}
 }
