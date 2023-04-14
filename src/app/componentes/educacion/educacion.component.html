@@ -1,7 +1,29 @@
 <div class="container-fluid mt-5">
+  <div class="row mt-5">
+    <div class="d-flex justify-content-between">
+      <p class="lead mx-3">EDUCACION</p>
+      <div class="ml-5">
+        <button type="button" class="btn btn-outline-success"  routerLink="/nuevaedu" *ngIf="isLogged">
+          Agregar educación 
+        </button>
+      </div>
+    </div>
+    <table class="mx-5">
+      <tbody>
+        <tr *ngFor="let Educacion of educacion">
+          <td><h5>{{Educacion.nombreE}}</h5></td>
+          <td>{{Educacion.descripcionE}}</td>
+          <td *ngIf="isLogged"><button class="btn btn-outline-success" routerLink="/editedu/{{Educacion.id}}">✍</button></td>
+          <td *ngIf="isLogged"><button class="btn btn-outline-danger" (click)="delete(Educacion.id)">❌</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<!-- <div class="container-fluid mt-5">
   <p class="lead mx-3">EDUCACIÓN</p>
   <ul>
-    <li *ngFor="let educacion of educacionList">
+    <li *ngFor="let educacion of Educacion">
       <div class="container-fluid  mb-1">
         <div class="float-end mt-0 pt-0">
           <div class="btn btn-outline-success display-none" onclick="editar()">
@@ -23,4 +45,4 @@
       </div>
     </li>
   </ul>
-</div>
+</div> -->
