@@ -1,4 +1,24 @@
 <div class="container-fluid mt-5 ">
+    <div class="d-flex justify-content-between">
+    <p class="lead mx-3">SKILLS</p>
+    <button type="button" class="btn btn-outline-success" routerLink="/nuevaskill" *ngIf="isLogged">
+        Nueva skill 
+    </button>
+    </div>
+    <div class="d-flex flex-wrap">
+    <div class="container mx-0" style="max-width:45%;"  *ngFor="let skill of skill">
+        <h6>{{skill.nombre}} - {{skill.porcentaje}}%</h6>
+        <div class="progress">
+            <div class="progress-bar progress-bar-red progress-bar-striped active" style="width:88%;"></div>
+        </div>
+        <button *ngIf="isLogged"class="btn btn-outline-success" routerLink="/editskill/{{skill.id}}">✍</button>
+        <button *ngIf="isLogged"class="btn btn-outline-danger" (click)="delete(skill.id)">❌</button>
+    </div>
+    </div>
+</div>
+
+
+<!-- <div class="container-fluid mt-5 ">
     <p class="lead mx-3">HARD SKILLS</p>
     <div class="container mx-0">
         <div class="row mx-2">
@@ -81,4 +101,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
