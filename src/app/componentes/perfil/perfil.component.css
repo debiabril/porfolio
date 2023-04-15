@@ -1,6 +1,7 @@
-.img-banner{
-    background-image: url("../../../assets/imagenes/banner.jpeg");
+.banner{
+    background-color:rgb(23, 23, 23);
     min-height:5rem;
+    width: 100%;
 }
 .div-img-fotoPerfil{
     width: 15rem;
@@ -15,7 +16,4 @@
     font-family: 'Monofett', cursive;
 }
 
-.display-none{
-    display: none;
-}
 

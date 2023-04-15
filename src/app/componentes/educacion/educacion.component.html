@@ -1,14 +1,16 @@
 <div class="container-fluid mt-5">
   <div class="row mt-5">
-    <div class="d-flex justify-content-between">
-      <p class="lead mx-3">EDUCACION</p>
-      <div class="ml-5">
+    <div class="d-flex">
+      <div class="divEducacion d-flex justify-content-end">
+      <p class="lead mx-3">EDUCACIÓN</p>
+      </div>
+      <div class="divAgregar d-flex justify-content-end">
         <button type="button" class="btn btn-outline-success"  routerLink="/nuevaedu" *ngIf="isLogged">
           Agregar educación 
         </button>
       </div>
     </div>
-    <table class="mx-5">
+    <table class="">
       <tbody>
         <tr *ngFor="let Educacion of educacion">
           <td><h5>{{Educacion.nombreE}}</h5></td>
@@ -20,29 +22,3 @@
     </table>
   </div>
 </div>
-<!-- <div class="container-fluid mt-5">
-  <p class="lead mx-3">EDUCACIÓN</p>
-  <ul>
-    <li *ngFor="let educacion of Educacion">
-      <div class="container-fluid  mb-1">
-        <div class="float-end mt-0 pt-0">
-          <div class="btn btn-outline-success display-none" onclick="editar()">
-            <a href="#" class="btn-right">
-              ✍
-            </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col col-sm-2 align-self-center imgEducacion">
-            <a href="https://drive.google.com/drive/folders/191JX2x-VgShL9dlc_aFjC1FSH31DrutL?usp=sharing"
-              target="_blank"><img [src]="educacion.img" class="col-9" alt=""></a>
-          </div>
-          <div class="col col-lg-8">
-            <h5>{{educacion.titulo}}</h5>
-            <p>{{educacion.descripcion}}</p>
-          </div>
-        </div>
-      </div>
-    </li>
-  </ul>
-</div> -->

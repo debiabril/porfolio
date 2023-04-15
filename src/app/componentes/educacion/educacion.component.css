@@ -1,6 +1,3 @@
-ul{
-    list-style: none;
-}
 *{
     font-family: 'Life Savers', cursive;
     font-weight: bold;
@@ -8,11 +5,9 @@ ul{
 p{
     font-weight: bold;
 }
-.display-none{
-    display: none;
+.divEducacion{
+    width: 55%;
 }
-.imgEducacion{
-    height: 15rem;
-    width: 15rem;
-    object-fit: cover;
+.divAgregar{
+    width: 45%;
 }

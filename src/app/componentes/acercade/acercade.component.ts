@@ -12,7 +12,6 @@ export class AcercadeComponent implements OnInit {
   persona : persona = new persona("","","");
 
   constructor(public personaService: PersonaService){
-
   }
 
   ngOnInit(): void {
