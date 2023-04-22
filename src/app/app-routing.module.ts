@@ -8,6 +8,7 @@ import { NewEducacionComponent } from './componentes/educacion/new-educacion.com
 import { EditEducacionComponent } from './componentes/educacion/edit-educacion.component';
 import { NewSkillComponent } from './componentes/skills/new-skill.component';
 import { EditSkillComponent } from './componentes/skills/edit-skill.component';
+import { EditAcercaDeComponent } from './componentes/acercade/edit-acerca-de.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'editedu/:id', component: EditEducacionComponent},
   {path: 'nuevaskill', component: NewSkillComponent},
   {path: 'editskill/:id', component: EditSkillComponent},
+  {path: 'editarInformacion/:id', component: EditAcercaDeComponent},
 ];
 
 @NgModule({

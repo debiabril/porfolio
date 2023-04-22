@@ -4,3 +4,7 @@
 <div class="d-flex justify-content-center" >
   <p id="descripcion">{{persona.descripcion}}</p>
 </div>
+<button type="button" class="btn btn-outline-success w-100"  routerLink="/editarInformacion/1" *ngIf="isLogged">
+  Editar Información personal
+</button>
+

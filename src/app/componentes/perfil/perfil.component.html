@@ -2,19 +2,22 @@
     <div class="banner rounded-top text-white d-flex container-fluid">
       <div class="div-img-fotoPerfil ms-4 flex-column">
         <div>              
-        <img src="../../../assets/imagenes/fotoPerfil.jpg"
-          alt="Foto de Perfil" id="img-fotoPerfil" class="img-fluid mt-4 pt-3 mb-0 rounded-circle"></div>
-          <div class="d-flex justify-content-center">
-          <input type="file" id="file2" class="display-none"></div>
-          </div>
+          <img src={{persona.img}} alt="Foto de Perfil" id="img-fotoPerfil" class="img-fluid mt-4 pt-3 mb-0 rounded-circle">
+        </div>
+        <div class="d-flex justify-content-center">
+          <input type="file" id="file2" class="display-none">
+        </div>
+      </div>
       <div class="ms-5 pt-5 mt-5" >
-          <div>
-        <h2 class="titulo-nombre">{{persona.nombre}} {{persona.apellido}}</h2></div>
+        <div>
+          <h2 class="titulo-nombre">{{persona.nombre}} {{persona.apellido}}</h2>
+        </div>
         <div>
           <input id="edit-nombre" class="display-none" type="text">
         </div>
-          <div>
-        <h3 class="titulo-profesion">Desarrolladora Fullstack en proceso.. 🔜 </h3></div>
+        <div>
+          <h3 class="titulo-profesion">Desarrolladora Fullstack en proceso.. 🔜 </h3>
+        </div>
       </div>
     </div>
 </div>
