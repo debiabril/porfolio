@@ -1,5 +1,5 @@
 <div class="d-flex align-items-center  w-100">
-    <div class="banner rounded-top text-white d-flex container-fluid">
+    <div class="banner rounded-top text-white d-flex container-fluid" [ngStyle]="{'background-image': 'url(' + persona.banner + ')'}">
       <div class="div-img-fotoPerfil ms-4 flex-column">
         <div>              
           <img src={{persona.img}} alt="Foto de Perfil" id="img-fotoPerfil" class="img-fluid mt-4 pt-3 mb-0 rounded-circle">
@@ -16,7 +16,7 @@
           <input id="edit-nombre" class="display-none" type="text">
         </div>
         <div>
-          <h3 class="titulo-profesion">Desarrolladora Fullstack en proceso.. 🔜 </h3>
+          <h3 class="titulo-profesion">{{persona.titulo}}</h3>
         </div>
       </div>
     </div>

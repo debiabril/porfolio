@@ -4,6 +4,18 @@
 <div class="d-flex justify-content-center" >
   <p id="descripcion">{{persona.descripcion}}</p>
 </div>
+<div class="d-flex justify-content-center" >
+  <p id="email">📧 {{persona.email}}</p>
+</div>
+<div class="d-flex justify-content-center" >
+  <p id="celular">{{persona.celular}}</p>
+</div>
+<div class="d-flex justify-content-center" >
+  <p id="ciudad">{{persona.ciudad}}</p>
+</div>
+<div class="d-flex justify-content-center" >
+  <p id="fechaNacimiento">{{persona.fechaNacimiento}}</p>
+</div>
 <button type="button" class="btn btn-outline-success w-100"  routerLink="/editarInformacion/1" *ngIf="isLogged">
   Editar Información personal
 </button>

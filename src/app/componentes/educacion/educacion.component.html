@@ -10,15 +10,17 @@
         </button>
       </div>
     </div>
-    <table class="">
-      <tbody>
-        <tr *ngFor="let Educacion of educacion">
-          <td><h5>{{Educacion.nombreE}}</h5></td>
-          <td>{{Educacion.descripcionE}}</td>
-          <td *ngIf="isLogged"><button class="btn btn-outline-success" routerLink="/editedu/{{Educacion.id}}">✍</button></td>
-          <td *ngIf="isLogged"><button class="btn btn-outline-danger" (click)="delete(Educacion.id)">❌</button></td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="card" style="width: 18rem;" *ngFor="let Educacion of educacion">
+      <img class="card-img-top" src="{{Educacion.imgE}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{Educacion.nombreE}}</h5>
+        <p class="card-text">{{Educacion.descripcionE}}</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">{{Educacion.tituloE}}</li>
+        <li class="list-group-item">{{Educacion.fechaE}}</li>
+        <li class="list-group-item" *ngIf="isLogged"><button class="btn btn-outline-success" routerLink="/editedu/{{Educacion.id}}">✍</button><button class="btn btn-outline-danger" (click)="delete(Educacion.id)">❌</button></li>
+      </ul>
+    </div>
   </div>
 </div>

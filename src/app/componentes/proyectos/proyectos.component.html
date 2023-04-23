@@ -1,13 +1,20 @@
 <div class="container-fluid mt-5 ">
-    <p class="lead mx-5">PROYECTOS</p>
-<!--     <div class="container-fluid" *ngFor="let proyecto of proyectoList">
-    <div class="row d-flex mx-1 mb-3">
-      <div class="col-auto mx-3 col-proyectos-ancho">
-      <a href="#" target="_blank"><img class="rounded" src="../../../assets/imagenes/logoPortfolio.jpg" alt="Imagen Proyecto" width="300px" height="190px"></a>
-        <h5 >{{proyecto.titulo}}</h5>
-        <p> {{proyecto.fecha}} </p> 
-        <p> {{proyecto.descripcion}}</p>  
-      </div>
-    </div>
-    </div>  -->
-    </div>
+  <p class="lead mx-5">PROYECTOS</p>
+  <div class="ml-5">
+    <button type="button" class="btn btn-outline-success"  routerLink="/nuevoproyecto" *ngIf="isLogged">
+      Nuevo Proyecto
+    </button>
+  </div>
+</div>
+<div class="card" style="width: 18rem;" *ngFor="let Proyecto of proyecto">
+  <img class="card-img-top" src="{{Proyecto.imgP}}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{Proyecto.nombreP}}</h5>
+    <p class="card-text">{{Proyecto.descripcionP}}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">{{Proyecto.fechaP}}</li>
+    <li class="list-group-item"><a class="btn btn-outline-info" href="{{Proyecto.linkP}}">Ir al Proyecto</a> </li>
+    <li class="list-group-item" *ngIf="isLogged"><button class="btn btn-outline-success" routerLink="/editarproyecto/{{Proyecto.id}}">✍</button><button class="btn btn-outline-danger" (click)="delete(Proyecto.id)">❌</button></li>
+  </ul>
+</div>

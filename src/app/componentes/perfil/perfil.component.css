@@ -1,4 +1,6 @@
 .banner{
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color:rgb(23, 23, 23);
     min-height:5rem;
     width: 100%;
