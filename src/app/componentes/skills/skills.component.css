@@ -2,6 +2,10 @@
     font-family: 'Life Savers', cursive;
     font-weight: bold;
 }
+.skills{
+    color: black;
+    background-color: #FF9234;
+}
 .progress-title{
     font-family: 'Life Savers', cursive;
     font-weight: bold;
@@ -43,4 +47,20 @@
 }
 @keyframes animate-positive{
     0%{ width: 0; }
+}
+
+@media (max-width:1350px){
+    .barraSkill{
+        min-width: 33%;
+    }
+}
+@media (max-width:1065px){
+    .barraSkill{
+        min-width: 50%;
+    }
+}
+@media (max-width:630px){
+    .barraSkill{
+        min-width: 95%;
+    }
 }

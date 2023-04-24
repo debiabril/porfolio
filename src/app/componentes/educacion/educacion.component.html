@@ -1,26 +1,27 @@
-<div class="container-fluid mt-5">
+<div class="container-fluid pt-1 pb-4 educacion">
   <div class="row mt-5">
-    <div class="d-flex">
-      <div class="divEducacion d-flex justify-content-end">
+    <div class="d-flex justify-content-center">
       <p class="lead mx-3">EDUCACIÓN</p>
-      </div>
-      <div class="divAgregar d-flex justify-content-end">
-        <button type="button" class="btn btn-outline-success"  routerLink="/nuevaedu" *ngIf="isLogged">
-          Agregar educación 
-        </button>
-      </div>
     </div>
-    <div class="card" style="width: 18rem;" *ngFor="let Educacion of educacion">
-      <img class="card-img-top" src="{{Educacion.imgE}}" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">{{Educacion.nombreE}}</h5>
-        <p class="card-text">{{Educacion.descripcionE}}</p>
+    <div class="divAgregar d-flex justify-content-end">
+      <button type="button" class="btn btn-outline-success"  routerLink="/nuevaedu" *ngIf="isLogged">
+        Agregar nueva educación 
+      </button>
+    </div>
+    <div class="cards d-flex justify-content-around flex-wrap mt-4">
+      <div class="card mx-2 my-2"  style="width: 25rem;" *ngFor="let Educacion of educacion">
+        <img class="card-img-top" src="{{Educacion.imgE}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title text-center">{{Educacion.nombreE}}</h5>
+          <h6 class="card-title text-center">{{Educacion.tituloE}}</h6>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item text-center">{{Educacion.descripcionE}}</li>
+          <li class="list-group-item text-center">{{Educacion.fechaE}}</li>
+          <li class="list-group-item text-center">{{Educacion.estadoE}}</li>
+          <li class="list-group-item d-flex justify-content-around" *ngIf="isLogged"><button class="btn btn-outline-info" routerLink="/editedu/{{Educacion.id}}">✍</button><button class="btn btn-outline-danger" (click)="delete(Educacion.id)">❌</button></li>
+        </ul>
       </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">{{Educacion.tituloE}}</li>
-        <li class="list-group-item">{{Educacion.fechaE}}</li>
-        <li class="list-group-item" *ngIf="isLogged"><button class="btn btn-outline-success" routerLink="/editedu/{{Educacion.id}}">✍</button><button class="btn btn-outline-danger" (click)="delete(Educacion.id)">❌</button></li>
-      </ul>
     </div>
   </div>
 </div>

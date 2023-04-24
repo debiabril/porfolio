@@ -1,20 +1,26 @@
-<div class="container-fluid mt-5 ">
-  <p class="lead mx-5">PROYECTOS</p>
-  <div class="ml-5">
-    <button type="button" class="btn btn-outline-success"  routerLink="/nuevoproyecto" *ngIf="isLogged">
-      Nuevo Proyecto
-    </button>
+<div class="container-fluid pt-5 pb-3 proyecto">
+  <div class="row">
+    <div class="d-flex justify-content-center">
+      <p class="lead mx-5">PROYECTOS</p>
+    </div>
+    <div class="d-flex justify-content-end">
+      <button type="button" class="btn btn-warning"  routerLink="/nuevoproyecto" *ngIf="isLogged">
+        Agregar nuevo Proyecto
+      </button>
+    </div>
   </div>
-</div>
-<div class="card" style="width: 18rem;" *ngFor="let Proyecto of proyecto">
-  <img class="card-img-top" src="{{Proyecto.imgP}}" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">{{Proyecto.nombreP}}</h5>
-    <p class="card-text">{{Proyecto.descripcionP}}</p>
+  <div class="cards d-flex justify-content-around flex-wrap my-4">
+    <div class="card mx-2 my-2" style="width: 26rem;" *ngFor="let Proyecto of proyecto">
+      <img class="card-img-top" src="{{Proyecto.imgP}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title text-center">{{Proyecto.nombreP}}</h5>
+        <p class="card-text text-center">{{Proyecto.descripcionP}}</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center">{{Proyecto.fechaP}}</li>
+        <li class="list-group-item text-center"><a class="btn btn-outline-info" href="{{Proyecto.linkP}}">Ir al Proyecto</a> </li>
+        <li class="list-group-item d-flex justify-content-around" *ngIf="isLogged"><button class="btn btn-outline-info" routerLink="/editarproyecto/{{Proyecto.id}}">✍</button><button class="btn btn-outline-danger" (click)="delete(Proyecto.id)">❌</button></li>
+      </ul>
+    </div>
   </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">{{Proyecto.fechaP}}</li>
-    <li class="list-group-item"><a class="btn btn-outline-info" href="{{Proyecto.linkP}}">Ir al Proyecto</a> </li>
-    <li class="list-group-item" *ngIf="isLogged"><button class="btn btn-outline-success" routerLink="/editarproyecto/{{Proyecto.id}}">✍</button><button class="btn btn-outline-danger" (click)="delete(Proyecto.id)">❌</button></li>
-  </ul>
 </div>

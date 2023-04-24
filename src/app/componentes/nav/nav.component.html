@@ -1,29 +1,26 @@
-<nav class="navbar navbar-dark d-flex flex-wrap justify-content-between bg-dark container-fluid">
-      <div class="d-flex flex-wrap justify-content-start">
-      <a class="navbar-brand" href="#">
-        <img src= "../../../assets/imagenes/logo_ArgProg.jpg" width="30" height="30" alt="Logo ArgProg">
-      </a>
-      <a class="navbar-brand " href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa"><small>Argentina Programa - #YoProgramo</small></a></div>
-      <div class="d-flex flex-wrap"> 
-      <ul class="navbar mb-0 pb-0">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark container-fluid">
+      <div class="container-fluid">
+      <a class="navbar-brand d-flex flex-wrap" href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa">
+        <img src= "../../../assets/imagenes/logo_ArgProg.jpg" width="30" height="30" alt="Logo ArgProg"> Argentina Programa</a></div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="opciones"> 
+      <ul class="navbar-nav justify-content-end flex-grow-1">
       <li class="nav-link mx-0">
-          <span class="iconosContacto"> <a class="iconosLink" href="https://wa.link/tupwyv" target="_blank"><img src="../../../assets/imagenes/wsp.png"
-              alt="Whatsapp"></a> </span>  
+        <a class="iconosLink" href="https://wa.link/tupwyv" target="_blank"><img src="../../../assets/imagenes/wsp.png" alt="Whatsapp"></a> 
       </li>
       <li class="nav-link mx-0">
-        <span class="iconosContacto"> <a class="iconosLink" href="https://github.com/debiabril" target="_blank"><img
-            src="../../../assets/imagenes/github.png" alt="github"></a> </span>         
+      <a class="iconosLink" href="https://github.com/debiabril" target="_blank"><img src="../../../assets/imagenes/github.png" alt="github"></a>      
       </li>
       <li class="nav-link mx-0">
-          <span class="iconosContacto"> <a class="iconosLink" href="https://www.linkedin.com/in/debora-abril-badosa/" target="_blank"><img
-              src="../../../assets/imagenes/linkedinIcon.png" alt="LinkedIn"></a> </span>
+        <a class="iconosLink" href="https://www.linkedin.com/in/debora-abril-badosa/" target="_blank"><img src="../../../assets/imagenes/linkedinIcon.png" alt="LinkedIn"></a>
       </li>
       <li class="nav-link mx-0">
-          <span class="iconosContacto"> <a class="iconosLink" href="mailto:debora.badosa@gmail.com" target="_blank"><img
-              src="../../../assets/imagenes/mailIcon.png" alt="Mail"></a> </span>         
+        <a class="iconosLink" href="mailto:debora.badosa@gmail.com" target="_blank"><img src="../../../assets/imagenes/mailIcon.png" alt="Mail"></a>        
       </li>
       </ul> 
-      <button type="button" class="btn btn-outline-success py-1 my-3 mx-5" (click)="login()" *ngIf="!isLogged">Iniciar Sesión</button>
-      <button type="button" class="btn btn-outline-success py-1 my-3 mx-5" (click)="onLogOut()" *ngIf="isLogged">Cerrar Sesión</button>
+      <button type="button" class="btn btn-outline-success px-5 py-1 my-3 mx-5" (click)="login()" *ngIf="!isLogged">Iniciar Sesión</button>
+      <button type="button" class="btn btn-outline-success px-5 py-1 my-3 mx-5" (click)="onLogOut()" *ngIf="isLogged">Cerrar Sesión</button>
     </div>
 </nav>
