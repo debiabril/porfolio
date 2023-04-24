@@ -1,11 +1,14 @@
-.lead{
-    font-family: 'Life Savers', cursive;
-    font-weight: bold;
-}
-.display-none{
-    display: none;
-}
 *{
     font-family: 'Life Savers', cursive;
     font-weight: bold;
+}
+.acercade{
+    color: black;
+    background-color: #35D0BA;
+}
+@media (max-width:630px){
+    .descripcion{
+        width: 90%;
+        margin: auto;
+    }
 }

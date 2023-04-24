@@ -1,0 +1,66 @@
+*{
+    font-family: 'Life Savers', cursive;
+    font-weight: bold;
+}
+.skills{
+    color: black;
+    background-color: #FF9234;
+}
+.progress-title{
+    font-family: 'Life Savers', cursive;
+    font-weight: bold;
+    font-size: small;
+    margin: 0 0 ;
+}
+.progress{
+    height: 25px;
+    background: #fff;
+    border-top: 4px solid #000000;
+    border-bottom: 4px solid #000000;
+    border-radius: 0;
+    margin-bottom: 10px;
+    overflow: visible;
+    position: relative;
+}
+.progress:before,
+.progress:after{
+    content: "";
+    width: 5px;
+    background: #000000;
+    position: absolute;
+    top: 0;
+    left: -5px;
+    bottom: 0;
+}
+.progress:after{
+    left: auto;
+    right: -5px;
+}
+.progress .progress-bar{
+    border: none;
+    box-shadow: none;
+    -webkit-animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 1s;
+    animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 1s;
+}
+@-webkit-keyframes animate-positive{
+    0%{ width: 0; }
+}
+@keyframes animate-positive{
+    0%{ width: 0; }
+}
+
+@media (max-width:1350px){
+    .barraSkill{
+        min-width: 33%;
+    }
+}
+@media (max-width:1065px){
+    .barraSkill{
+        min-width: 50%;
+    }
+}
+@media (max-width:630px){
+    .barraSkill{
+        min-width: 95%;
+    }
+}

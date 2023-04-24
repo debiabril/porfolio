@@ -1,26 +1,27 @@
-<div class="container-fluid mt-5">
-  <p class="lead mx-3">EDUCACIÓN</p>
-  <ul>
-    <li *ngFor="let educacion of educacionList">
-      <div class="container-fluid  mb-1">
-        <div class="float-end mt-0 pt-0">
-          <div class="btn btn-outline-success display-none" onclick="editar()">
-            <a href="#" class="btn-right">
-              ✍
-            </a>
-          </div>
+<div class="container-fluid pt-1 pb-4 educacion">
+  <div class="row mt-5">
+    <div class="d-flex justify-content-center">
+      <p class="lead mx-3">EDUCACIÓN</p>
+    </div>
+    <div class="divAgregar d-flex justify-content-end">
+      <button type="button" class="btn btn-dark"  routerLink="/nuevaedu" *ngIf="isLogged">
+        Agregar nueva educación 
+      </button>
+    </div>
+    <div class="cards d-flex justify-content-around flex-wrap mt-4">
+      <div class="card mx-4 my-4"  style="width: 25rem;" *ngFor="let Educacion of educacion">
+        <img class="card-img-top" src="{{Educacion.imgE}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title text-center">{{Educacion.nombreE}}</h5>
+          <h6 class="card-title text-center">{{Educacion.tituloE}}</h6>
         </div>
-        <div class="row">
-          <div class="col col-sm-2 align-self-center imgEducacion">
-            <a href="https://drive.google.com/drive/folders/191JX2x-VgShL9dlc_aFjC1FSH31DrutL?usp=sharing"
-              target="_blank"><img [src]="educacion.img" class="col-9" alt=""></a>
-          </div>
-          <div class="col col-lg-8">
-            <h5>{{educacion.titulo}}</h5>
-            <p>{{educacion.descripcion}}</p>
-          </div>
-        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item text-center">{{Educacion.descripcionE}}</li>
+          <li class="list-group-item text-center">{{Educacion.fechaE}}</li>
+          <li class="list-group-item text-center">{{Educacion.estadoE}}</li>
+          <li class="list-group-item d-flex justify-content-around" *ngIf="isLogged"><button class="btn btn-outline-info" routerLink="/editedu/{{Educacion.id}}">✍</button><button class="btn btn-outline-danger" (click)="delete(Educacion.id)">❌</button></li>
+        </ul>
       </div>
-    </li>
-  </ul>
+    </div>
+  </div>
 </div>

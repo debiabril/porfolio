@@ -1,24 +1,26 @@
-<div class="container-fluid mt-5">
-    <p class="lead mx-3">EXPERIENCIA</p>
-  <ul>
-    <li *ngFor="let experiencia of experienciaList">
-    <div class="container-fluid mb-1 ">
-      <div class="float-end mt-0 pt-0">
-        <div class="btn btn-outline-success display-none" onclick="editar()">
-          <a href="#" class="btn-right">
-            ✍
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col col-sm-2 align-self-center"><img [src]="experiencia.img" class="col-9"  alt="Logo_cuidadoPers"></div>
-        <div class="col col-lg-6">
-          <h5>{{experiencia.puesto}}</h5>
-          <p>{{experiencia.lugarYfecha}}</p>
-          <p>{{experiencia.descripcion}}</p>
-        </div>
-        </div>
+<div class="container-fluid pt-5 pb-4 experiencia">
+  <div class="row">
+    <div class="d-flex justify-content-center">
+      <p class="lead mx-3">EXPERIENCIA</p>
     </div>
-    </li>
-  </ul>
+    <div class="d-flex justify-content-end">
+      <button type="button" class="btn btn-outline-info"  routerLink="/nuevaexp" *ngIf="isLogged">
+        Agregar nueva experiencia 
+      </button>
+    </div>
+    <div class="cards d-flex justify-content-around flex-wrap mt-4">
+    <div class="card mx-2 my-2"  style="width: 25rem;" *ngFor="let Experiencia of experiencia">
+      <img class="card-img-top" src="{{Experiencia.imgE}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title text-center">{{Experiencia.nombreE}}</h5>
+        <p class="card-text text-center">{{Experiencia.descripcionE}}</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center">{{Experiencia.puestoE}}</li>
+        <li class="list-group-item text-center">{{Experiencia.fechaE}}</li>
+        <li class="list-group-item d-flex justify-content-around" *ngIf="isLogged"><button class="btn btn-outline-info" routerLink="/editexp/{{Experiencia.id}}">✍</button><button class="btn btn-outline-danger" (click)="delete(Experiencia.id)">❌</button></li>
+      </ul>
+    </div>
+    </div>
+  </div>
 </div>

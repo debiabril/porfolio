@@ -1,17 +1,9 @@
 :root{
-    --red-color: rgba(255, 0, 0, 0.884);
-    --green-color: rgb(4, 194, 4);
-    --violet-color: rgb(119, 0, 255);
-    --orange-color: rgb(255, 136, 0);
-    --lightblue-color: rgb(86, 213, 255);
-    --yellow-color: rgb(255, 230, 0);
-    --black-color: black;
     --fondo-color: rgba(101, 248, 79, 0.205);
-   
 }
 body{
     overflow-y: scroll;
-    background-color: rgba(101, 248, 79, 0.205);
+    background-color: rgba(12, 12, 12, 0.205);
     font-family: 'Life Savers', cursive;
     font-weight: bold;
 }
@@ -24,7 +16,6 @@ body{
     background-color: rgba(0,0,0,.5);
     -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
-
 .btn{
     font-weight: bold;
 }

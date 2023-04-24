@@ -1,10 +1,50 @@
-ul{
-    list-style: none;
-}
 *{
     font-family: 'Life Savers', cursive;
     font-weight: bold;
 }
-.display-none{
-    display: none;
+.experiencia{
+    color: black;
+    background-color: #D92027;
+}
+ul{
+    list-style: none;
+}
+.card-img-top{
+    margin: 0.5rem 0.5rem;
+    width: 24rem !important;
+    height: 14rem !important;
+    object-fit: cover;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.39);
+}
+.card, li{
+    color: aliceblue;
+    background-color: #edb601;
+}
+.card:hover{
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+@media (max-width:425px){
+    .card-img-top{
+        margin: 0.5rem 0.5rem;
+        width: 21rem !important;
+        object-fit: cover;
+        box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.39);
+    }
+}
+@media (max-width:375px){
+    .card-img-top{
+        margin: 0.5rem 0.5rem;
+        width: 18rem !important;
+        object-fit: cover;
+        box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.39);
+    }
+}
+@media (max-width:320px){
+    .card-img-top{
+        margin: 0.5rem 0.5rem;
+        width: 15rem !important;
+        object-fit: cover;
+        box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.39);
+    }
 }
