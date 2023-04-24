@@ -1,4 +1,4 @@
-<div class="container-fluid my-5">
+<div class="container-fluid skills my-5">
     <div class="d-flex justify-content-center formulario">
         <form (ngSubmit)="onUpdate()" novalidate #form="ngForm" class="container d-flex justify-content-center flex-column w-50">
             <div class="form-group">
@@ -13,7 +13,7 @@
             <label for="color">Color Fondo</label>
             <input type="color" name="color" id="color" [(ngModel)]="skill.color" required>
             </div>
-            <button class="btn btn-outline-success">
+            <button class="btn btn-dark w-100 mt-2">
                 Actualizar skill
             </button>
         </form>

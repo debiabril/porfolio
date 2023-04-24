@@ -1,4 +1,4 @@
-<div class="container" *ngIf="persona">
+<div class="container acercade" *ngIf="persona">
     <div class="row">
         <div>
             <form (ngSubmit)="onUpdate()" novalidate #form="ngForm">
@@ -45,7 +45,7 @@
                 <div class="imagen">
                     <img [src]="imageService.url" width="200px" alt="foto de perfil">
                 </div>
-                <button class="btn btn-outline-success w-100 mt-2">
+                <button class="btn btn-success w-100 mt-2">
                     Editar Información personal
                 </button>
             </form>

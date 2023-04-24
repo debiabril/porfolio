@@ -1,4 +1,4 @@
-<div class="container" *ngIf="proyecto">
+<div class="container proyecto" *ngIf="proyecto">
     <div class="row">
         <div>
             <form (ngSubmit)="onUpdate()" novalidate #form="ngForm">
@@ -22,7 +22,7 @@
                     <label for="linkP">Link del proyecto</label>
                     <input type="text" class="form-control" id="linkP" name="linkP"[(ngModel)]="proyecto.linkP" required>
                 </div>
-                <button class="btn btn-outline-success">
+                <button class="btn btn-warning w-100 mt-2">
                     Actualizar proyecto
                 </button>
             </form>

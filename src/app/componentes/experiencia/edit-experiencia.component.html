@@ -1,4 +1,4 @@
-<div class="container" *ngIf="expLab">
+<div class="container experiencia" *ngIf="expLab">
     <div class="row">
         <div>
             <form (ngSubmit)="onUpdate()" novalidate #form="ngForm">
@@ -22,7 +22,7 @@
                     <label for="fechaE">Fecha en la que se desempeñaron las funciones</label>
                     <input type="text" class="form-control" id="fechaE" name="fechaE"[(ngModel)]="expLab.fechaE" required>
                 </div>
-                <button class="btn btn-outline-success">
+                <button class="btn btn-info w-100 mt-2">
                     Actualizar experiencia
                 </button>
             </form>
