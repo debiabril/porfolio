@@ -38,7 +38,7 @@
 @media (max-width:320px){
     .card-img-top{
         margin: 0.5rem 0.5rem;
-        width: 12rem !important;
+        width: 10rem !important;
         object-fit: cover;
         box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.39);
     }
