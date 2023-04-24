@@ -22,7 +22,7 @@
 @media (max-width:425px){
     .card-img-top{
         margin: 0.5rem 0.5rem;
-        width: 21rem !important;
+        width: 19rem !important;
         object-fit: cover;
         box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.39);
     }
@@ -30,7 +30,7 @@
 @media (max-width:375px){
     .card-img-top{
         margin: 0.5rem 0.5rem;
-        width: 18rem !important;
+        width: 16rem !important;
         object-fit: cover;
         box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.39);
     }
@@ -38,7 +38,7 @@
 @media (max-width:320px){
     .card-img-top{
         margin: 0.5rem 0.5rem;
-        width: 15rem !important;
+        width: 12.5rem !important;
         object-fit: cover;
         box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.39);
     }
