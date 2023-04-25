@@ -23,7 +23,7 @@ ul{
     transform: scale(1.1);
     opacity: 0.9;
 }
-@media (max-width:425px){
+/* @media (max-width:425px){
     .card-img-top{
         margin: 0.5rem 0.5rem;
         width: 19rem !important;
@@ -46,4 +46,4 @@ ul{
         object-fit: cover;
         box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.39);
     }
-}
+} */

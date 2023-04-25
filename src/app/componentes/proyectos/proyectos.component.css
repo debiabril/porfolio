@@ -19,7 +19,7 @@
 .card:hover{
     transform: scale(1.1);
 }
-@media (max-width:425px){
+/* @media (max-width:425px){
     .card-img-top{
         margin: 0.5rem 0.5rem;
         width: 19rem !important;
@@ -42,4 +42,4 @@
         object-fit: cover;
         box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.39);
     }
-}
+} */
