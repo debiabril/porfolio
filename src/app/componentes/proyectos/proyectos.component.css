@@ -1,4 +1,7 @@
 *{
+    font-family: 'Poltawski Nowy', serif;
+}
+.lead, .card-title{
     font-family: 'Life Savers', cursive;
     font-weight: bold;
 }
@@ -8,7 +11,8 @@
 }
 .card-img-top{
     margin: 0.4rem 0.4rem;
-    width: 25rem !important;
+    width: auto;
+    height: 9rem !important;
     object-fit: cover;
     box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.39);
 }
@@ -19,7 +23,7 @@
 .card:hover{
     transform: scale(1.1);
 }
-@media (max-width:425px){
+/* @media (max-width:425px){
     .card-img-top{
         margin: 0.5rem 0.5rem;
         width: 19rem !important;
@@ -42,4 +46,4 @@
         object-fit: cover;
         box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.39);
     }
-}
+} */
