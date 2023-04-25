@@ -1,4 +1,7 @@
 *{
+    font-family: 'Poltawski Nowy', serif;
+}
+.lead, .card-title{
     font-family: 'Life Savers', cursive;
     font-weight: bold;
 }

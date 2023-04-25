@@ -1,5 +1,55 @@
 *{
-    font-family: 'Life Savers', cursive;
-    font-weight: bold;
+    font-family: 'Poltawski Nowy', serif;
+    color: white;
+}
+div.container
+{
+    margin: 0 auto;
+	text-align: center;
+}
+
+div.container a
+{
+    color: #FFF;
+    text-decoration: none;
+    font-size: large;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+/* Circle behind */
+div.circleBehind a:before, div.circleBehind a:after
+{
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    width: 3rem;
+    height: 3rem;
+    border: 5px solid #0277bd;
+    transform: translateX(-70%) translateY(-70%) scale(0.9);
+    border-radius: 50%;
+    background: transparent;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+div.circleBehind a:after
+{
+    border-width: 2px;
+    transition: all 0.4s;
+}
+
+div.circleBehind a:hover:before
+{
+    opacity: 1;
+    transform: translateX(-60%) translateY(-60%) scale(1);
+}
+
+div.circleBehind a:hover:after
+{
+    opacity: 1;
+    transform: translateX(-60%) translateY(-60%) scale(1.3);
 }
 

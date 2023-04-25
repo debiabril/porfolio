@@ -1,7 +1,7 @@
 <div class="container-fluid pt-1 pb-4 educacion">
   <div class="row mt-5">
     <div class="d-flex justify-content-center">
-      <p class="lead mx-3">EDUCACIÓN</p>
+      <p class="lead mx-3" id="educacion">EDUCACIÓN</p>
     </div>
     <div class="divAgregar d-flex justify-content-end">
       <button type="button" class="btn btn-dark"  routerLink="/nuevaedu" *ngIf="isLogged">
@@ -11,11 +11,11 @@
     <div class="cards d-flex justify-content-around flex-wrap mt-4">
       <div class="card mx-4 my-4"  style="width: 20rem;" *ngFor="let Educacion of educacion">
         <img class="card-img-top" src="{{Educacion.imgE}}" alt="Card image cap">
-        <div class="card-body d-flex row align-items-end">
+        <div class="card-body d-flex row align-items-start">
           <h5 class="card-title text-center">{{Educacion.nombreE}}</h5>
-          <h6 class="card-title text-center">{{Educacion.tituloE}}</h6>
         </div>
         <ul class="list-group list-group-flush">
+          <li class="list-group-item text-center">{{Educacion.tituloE}}</li>
           <li class="list-group-item text-center">{{Educacion.descripcionE}}</li>
           <li class="list-group-item text-center">{{Educacion.fechaE}}</li>
           <li class="list-group-item text-center">{{Educacion.estadoE}}</li>

@@ -1,7 +1,7 @@
 <div class="container-fluid pt-5 pb-4 experiencia">
   <div class="row">
     <div class="d-flex justify-content-center">
-      <p class="lead mx-3">EXPERIENCIA</p>
+      <p class="lead mx-3" id="experiencia">EXPERIENCIA</p>
     </div>
     <div class="d-flex justify-content-end">
       <button type="button" class="btn btn-outline-info"  routerLink="/nuevaexp" *ngIf="isLogged">
@@ -9,14 +9,14 @@
       </button>
     </div>
     <div class="cards d-flex justify-content-around flex-wrap mt-4">
-    <div class="card mx-2 my-2"  style="width: 20rem;" *ngFor="let Experiencia of experiencia">
+    <div class="card mx-4 my-4"  style="width: 20rem;" *ngFor="let Experiencia of experiencia">
       <img class="card-img-top" src="{{Experiencia.imgE}}" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title text-center">{{Experiencia.nombreE}}</h5>
-        <p class="card-text text-center">{{Experiencia.descripcionE}}</p>
       </div>
       <ul class="list-group list-group-flush">
         <li class="list-group-item text-center">{{Experiencia.puestoE}}</li>
+        <li class="list-group-item text-center">{{Experiencia.descripcionE}}</li>
         <li class="list-group-item text-center">{{Experiencia.fechaE}}</li>
         <li class="list-group-item d-flex justify-content-around" *ngIf="isLogged"><button class="btn btn-outline-info" routerLink="/editexp/{{Experiencia.id}}">✍</button><button class="btn btn-outline-danger" (click)="delete(Experiencia.id)">❌</button></li>
       </ul>

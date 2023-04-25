@@ -1,5 +1,6 @@
-<div class="d-flex align-items-center  w-100">
-    <div class="banner rounded-top text-white d-flex justify-content-center flex-wrap container-fluid pb-3" [ngStyle]="{'background-image': 'url(' + persona.banner + ')'}">
+<div class="d-flex align-items-center w-100">
+  <div class="banner rounded-top text-white d-flex justify-content-center flex-wrap container-fluid pb-3" [ngStyle]="{'background-image': 'url(' + persona.banner + ')'}">
+    <div class="d-flex justify-content-center flex-wrap">
       <div class="div-img-fotoPerfil ">
         <div>              
           <img src={{persona.img}} alt="Foto de Perfil" id="img-fotoPerfil" class="img-fluid mt-4 pt-3 mb-0 rounded-circle">
@@ -10,8 +11,49 @@
           <h2 class="titulo-nombre">{{persona.nombre}} {{persona.apellido}}</h2>
         </div>
         <div>
-          <h3 class="titulo-profesion">{{persona.titulo}}</h3>
+          <h3 class="titulo-profesion pt-3">{{persona.titulo}}</h3>
         </div>
       </div>
     </div>
+    <!-- <div class="d-flex justify-content-end align-items-center">
+      <ul class="d-flex justify-content-end align-items-center"> 
+        <li>
+          <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="fab fa-linkedin"></span>
+          </a> 
+        </li>
+        <li>
+          <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="fab fa-github"></span>
+          </a> 
+        </li>
+        <li>
+          <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="fab fa-whatsapp"></span>
+          </a> 
+        </li>
+        <li>
+          <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="fas fa-mail-bulk"></span>
+          </a> 
+        </li>
+      </ul>  
+    </div> --> 
+  </div>
 </div>
