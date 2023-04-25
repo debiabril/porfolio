@@ -8,7 +8,8 @@
 }
 .card-img-top{
     margin: 0.4rem 0.4rem;
-    width: 25rem !important;
+    width: auto;
+    height: 9rem !important;
     object-fit: cover;
     box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.39);
 }
